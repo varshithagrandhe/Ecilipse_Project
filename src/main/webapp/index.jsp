@@ -22,7 +22,7 @@
         boolean isSubmitted = firstName != null && lastName != null && email != null && password != null && confirmPassword != null && gender != null && country != null;
 
         if (isSubmitted) {
- if (!password.equals(confirmPassword)) {
+            if (!password.equals(confirmPassword)) {
                 out.println("<p style='color: red;'>Passwords do not match! Please try again.</p>");
             } else {
                 out.println("<h3>Registration Successful!</h3>");
